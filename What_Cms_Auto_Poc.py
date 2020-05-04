@@ -93,9 +93,10 @@ def search(cms):
 
 
 def set_url(url):
+    global cms_mode
+    cms_mode = Cms_Model()
     if url_check(url):
         cms_mode.url = url
-        cms_mode.type = None
     else:
         print("[+]url地址错误")
 
